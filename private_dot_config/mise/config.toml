@@ -1,0 +1,10 @@
+[tools]
+bun = "latest"
+chezmoi = "latest"
+neovim = "latest"
+uv = "latest"
+lazygit = "latest"
+zoxide = "latest"
+
+[settings]
+npm.bun = true
