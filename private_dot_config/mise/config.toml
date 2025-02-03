@@ -1,10 +1,15 @@
 [tools]
-bun = "latest"
 chezmoi = "latest"
+cargo-binstall = "latest"
+bun = "latest"
 neovim = "latest"
 uv = "latest"
 lazygit = "latest"
 zoxide = "latest"
+tree-sitter = "latest"
+node = "latest"
+lua-language-server = "latest"
+stylua = "latest"
 
 [settings]
 npm.bun = true
