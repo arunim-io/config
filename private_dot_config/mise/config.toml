@@ -2,14 +2,20 @@
 chezmoi = "latest"
 cargo-binstall = "latest"
 bun = "latest"
-neovim = "latest"
 uv = "latest"
 lazygit = "latest"
 zoxide = "latest"
-tree-sitter = "latest"
 node = "latest"
-lua-language-server = "latest"
-stylua = "latest"
+pnpm = "latest"
+github-cli = "latest"
+bat = "latest"
+zig = "latest"
+fzf = "latest"
+fd = "latest"
+rust = "latest"
+usage = "latest"
+go = "latest"
 
 [settings]
 npm.bun = true
+experimental = true

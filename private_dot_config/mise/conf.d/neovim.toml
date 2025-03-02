@@ -1,0 +1,21 @@
+[env]
+_.path = ["~/.local/share/bob/nvim-bin"]
+
+[tools]
+"ubi:MordechaiHadad/bob" = "latest"
+ripgrep = "latest"
+tree-sitter = "latest"
+bun = 'latest'
+'npm:vscode-langservers-extracted' = 'latest'
+'npm:typescript' = 'latest'
+'npm:typescript-language-server' = 'latest'
+lua-language-server = "latest"
+stylua = 'latest'
+'ubi:Kampfkarren/selene' = 'latest'
+'npm:@olrtg/emmet-language-server' = 'latest'
+taplo = 'latest'
+'pipx:basedpyright' = 'latest'
+ruff = 'latest'
+
+[settings.npm]
+bun = true
