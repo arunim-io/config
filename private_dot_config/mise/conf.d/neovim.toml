@@ -6,6 +6,7 @@ _.path = ["~/.local/share/bob/nvim-bin"]
 ripgrep = "latest"
 tree-sitter = "latest"
 'npm:vscode-langservers-extracted' = 'latest'
+'npm:eslint_d' = 'latest'
 'npm:typescript' = 'latest'
 'npm:typescript-language-server' = 'latest'
 lua-language-server = "latest"
@@ -18,6 +19,8 @@ stylua = 'latest'
 taplo = 'latest'
 'pipx:basedpyright' = 'latest'
 ruff = 'latest'
+zig = "0.14.0"
+zls = "0.14.0"
 
 [settings.npm]
 bun = true
