@@ -40,6 +40,10 @@ config.keys = {
 		mods = "CTRL",
 		action = actions.ActivateTabRelative(1),
 	},
+	{
+		key = "F11",
+		action = actions.ToggleFullScreen,
+	},
 }
 
 return config
