@@ -19,8 +19,13 @@ stylua = 'latest'
 taplo = 'latest'
 'pipx:basedpyright' = 'latest'
 ruff = 'latest'
-zig = "0.14.0"
-zls = "0.14.0"
+zig = "latest"
+zls = "latest"
+go = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+"go:github.com/a-h/templ/cmd/templ" = "latest"
+"npm:@microsoft/compose-language-service" = "latest"
+"go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 
 [settings.npm]
 bun = true
