@@ -25,7 +25,10 @@ go = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "npm:@microsoft/compose-language-service" = "latest"
+"npm:dockerfile-language-server-nodejs" = "latest"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
+"golangci-lint" = "latest"
+"golangci-lint-langserver" = "latest"
 
 [settings.npm]
 bun = true
