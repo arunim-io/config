@@ -2,16 +2,16 @@
 _.path = ["~/.local/share/bob/nvim-bin"]
 
 [tools]
-"cargo:bob-nvim" = "latest"
+bob = "latest"
 ripgrep = "latest"
 tree-sitter = "latest"
 'npm:vscode-langservers-extracted' = 'latest'
 'npm:eslint_d' = 'latest'
-'npm:typescript' = 'latest'
-'npm:typescript-language-server' = 'latest'
+'npm:prettier' = 'latest'
+"npm:@typescript/native-preview" = "latest"
 lua-language-server = "latest"
 stylua = 'latest'
-'ubi:Kampfkarren/selene' = 'latest'
+'cargo:selene' = 'latest'
 'npm:@olrtg/emmet-language-server' = 'latest'
 'npm:@tailwindcss/language-server' = 'latest'
 'npm:@astrojs/language-server' = 'latest'
