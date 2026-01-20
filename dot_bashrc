@@ -1,10 +1,7 @@
-# shellcheck source=/dev/null
-
-# Source the system bashrc first.
 if [ -f /etc/bashrc ]; then source /etc/bashrc; fi
 
-# Source user config from ~/.config/bash/config.bash
-if [ -f "$HOME/.config/bash/config.bash" ]; then
-  # shellcheck source=.config/bash/config.bash
-  source "$HOME/.config/bash/config.bash"
-fi
+export BASH_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/bash"
+export BASH_CONFIG_FILE="$BASH_CONFIG_DIR/config.bash"
+
+# shellcheck source=.config/bash/config.bash
+source "$BASH_CONFIG_FILE"

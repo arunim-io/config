@@ -16,6 +16,9 @@ uv = "latest"
 bun = "latest"
 node = "latest"
 rust = "latest"
+eza = "latest"
+carapace = "latest"
+bat-extras = "latest"
 
 [settings]
 npm.bun = true
