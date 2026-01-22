@@ -1,0 +1,11 @@
+spawn-at-startup "/usr/libexec/xfce-polkit"
+spawn-at-startup "waybar"
+spawn-at-startup "nm-applet"
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
+
+cursor {
+  hide-when-typing
+}

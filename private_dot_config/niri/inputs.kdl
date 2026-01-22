@@ -1,0 +1,4 @@
+input {
+		touchpad { natural-scroll; tap; }
+		warp-mouse-to-focus
+}
