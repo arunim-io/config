@@ -19,6 +19,7 @@ rust = "latest"
 eza = "latest"
 carapace = "latest"
 bat-extras = "latest"
+"cargo:topgrade" = "latest"
 
 [settings]
 npm.bun = true

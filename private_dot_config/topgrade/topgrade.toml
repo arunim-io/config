@@ -1,0 +1,4 @@
+[misc]
+pre_sudo = true
+cleanup = true
+show_distribution_summary = true

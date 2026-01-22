@@ -41,8 +41,7 @@ window#waybar {
 }
 
 #battery.charging {
-  background: @success;
-  color: @text_1;
+  color: @success;
 }
 
 #battery.warning {
