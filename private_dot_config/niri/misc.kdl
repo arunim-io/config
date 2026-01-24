@@ -1,6 +1,8 @@
 spawn-at-startup "/usr/libexec/xfce-polkit"
 spawn-at-startup "waybar"
 spawn-at-startup "nm-applet"
+spawn-at-startup "blueman-applet"
+spawn-at-startup "wl-paste --watch cliphist store"
 
 prefer-no-csd
 

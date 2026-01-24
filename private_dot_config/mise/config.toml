@@ -20,6 +20,7 @@ eza = "latest"
 carapace = "latest"
 bat-extras = "latest"
 "cargo:topgrade" = "latest"
+"go:go.senan.xyz/cliphist" = "latest"
 
 [settings]
 npm.bun = true

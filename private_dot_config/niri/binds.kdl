@@ -5,6 +5,7 @@ binds {
   Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
   Mod+Shift+Escape hotkey-overlay-title="Lock the Screen" { spawn "swaylock"; }
   Mod+M hotkey-overlay-title="Run Application Launcher" { spawn "fuzzel"; }
+  Mod+C hotkey-overlay-title="Show clipboard history" { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
 
   XF86AudioRaiseVolume allow-when-locked=true {
     spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"
