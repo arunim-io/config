@@ -1,6 +1,5 @@
-# shellcheck disable=SC1090,SC2155
+# shellcheck disable=SC1090,SC1094,SC2155
 
-# shellcheck disable=SC1091
 [[ $- == *i* ]] && source -- "$HOME/.local/share/blesh/ble.sh" --attach=none --rcfile "$HOME/.config/bash/bleshrc.bash"
 
 export BASH_CONF_DIRS="$BASH_CONFIG_DIR/conf.d"
@@ -20,7 +19,7 @@ export FZF_DEFAULT_OPTS="--layout=reverse --exact --border=bold --border=rounded
 export HISTCONTROL=ignoredup:erasedups
 export MANPAGER="nvim +Man!"
 export PAGER="bat"
-export SUDO_EDITOR="$(which nvim)"
+export SUDO_EDITOR="$XDG_DATA_HOME/bob/nvim-bin/nvim"
 export TERM="xterm-256color"
 export VISUAL="nvim -R"
 
@@ -92,6 +91,7 @@ export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 [ ! -f "$BASH_COMPLETION_DIR/uv" ] && uv generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uv"
 [ ! -f "$BASH_COMPLETION_DIR/uvx" ] && uvx --generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uvx"
 [ ! -f "$BASH_COMPLETION_DIR/zig" ] && curl -sLo "$BASH_COMPLETION_DIR/zig" "https://codeberg.org/ziglang/shell-completions/raw/branch/master/_zig.bash"
+[ ! -f "$BASH_COMPLETION_DIR/sqlc" ] && sqlc completion bash > "$BASH_COMPLETION_DIR/sqlc"
 
 # Misc.
 

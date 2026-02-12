@@ -2,7 +2,7 @@ binds {
   Mod+Slash { show-hotkey-overlay; }
   Ctrl+Alt+Delete { quit; }
 
-  Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+  Mod+Return hotkey-overlay-title="Open Terminal" { spawn-sh "ghostty +new-window"; }
   Mod+Shift+Escape hotkey-overlay-title="Lock the Screen" { spawn "swaylock"; }
   Mod+M hotkey-overlay-title="Run Application Launcher" { spawn "fuzzel"; }
   Mod+C hotkey-overlay-title="Show clipboard history" { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
