@@ -107,6 +107,8 @@ eval "$(zoxide init bash)"
 
 eval "$(starship init bash)"
 
+eval "$(keychain --eval --quiet id_ed25519 ~/.ssh/id_ed25519)"
+
 setup_blesh() {
   local data_dir="$XDG_DATA_HOME/blesh"
 
