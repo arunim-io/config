@@ -80,6 +80,8 @@ alias jctl="journalctl -p 3 -xb"
 
 alias cat="bat"
 
+eval "$(mise activate bash)"
+
 # Shell Completions
 export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 [ ! -d bash_completion_dir ] && mkdir -p "$BASH_COMPLETION_DIR"
@@ -87,6 +89,7 @@ export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 # TODO: Make carapace specs of these cli programs below along with many others
 [ ! -f "$BASH_COMPLETION_DIR/bob" ] && bob complete bash >> "$BASH_COMPLETION_DIR/bob"
 [ ! -f "$BASH_COMPLETION_DIR/mise" ] && mise completion bash --include-bash-completion-lib >> "$BASH_COMPLETION_DIR/mise"
+[ ! -f "$BASH_COMPLETION_DIR/fnox" ] && fnox completion bash >> "$BASH_COMPLETION_DIR/fnox"
 [ ! -f "$BASH_COMPLETION_DIR/ruff" ] && ruff generate-shell-completion bash >> "$BASH_COMPLETION_DIR/ruff"
 [ ! -f "$BASH_COMPLETION_DIR/uv" ] && uv generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uv"
 [ ! -f "$BASH_COMPLETION_DIR/uvx" ] && uvx --generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uvx"
@@ -95,12 +98,10 @@ export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 
 # Misc.
 
-eval "$(mise activate bash)"
+eval "$(fnox activate bash)"
 
 export CARAPACE_BRIDGES="zsh,fish,bash,inshellisense"
 source <(carapace _carapace)
-
-export GITHUB_TOKEN="$(gh auth token)"
 
 eval "$(zoxide init bash)"
 
