@@ -1,4 +1,5 @@
 font-family = "IosevkaTerm Nerd Font"
+font-size = 14
 cursor-style = block
 window-padding-balance = true
 window-new-tab-position = end
@@ -6,4 +7,3 @@ shell-integration-features = cursor, sudo, ssh-env, ssh-terminfo
 gtk-tabs-location = bottom
 gtk-toolbar-style = flat
 quit-after-last-window-closed = false
-log-level = debug

@@ -1,11 +1,4 @@
-[env]
-_.fnox-env.tools = true
-
-[plugins]
-fnox-env = "https://github.com/jdx/mise-env-fnox"
-
 [tools]
-fnox = "latest"
 sops = "latest"
 age = "latest"
 slsa-verifier = "latest"
@@ -28,8 +21,6 @@ carapace = "latest"
 bat-extras = "latest"
 "cargo:topgrade" = "latest"
 "go:go.senan.xyz/cliphist" = "latest"
-"github:jorgerojas26/lazysql" = "latest"
-"github:air-verse/air" = "latest"
 
 [settings]
 npm.bun = true
