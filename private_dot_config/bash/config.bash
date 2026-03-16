@@ -1,4 +1,4 @@
-# shellcheck disable=SC1090,SC1094,SC2155
+# shellcheck disable=SC1090,SC1091,SC1094,SC2155
 
 [[ $- == *i* ]] && source -- "$HOME/.local/share/blesh/ble.sh" --attach=none --rcfile "$HOME/.config/bash/bleshrc.bash"
 
@@ -89,7 +89,6 @@ export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 # TODO: Make carapace specs of these cli programs below along with many others
 [ ! -f "$BASH_COMPLETION_DIR/bob" ] && bob complete bash >> "$BASH_COMPLETION_DIR/bob"
 [ ! -f "$BASH_COMPLETION_DIR/mise" ] && mise completion bash --include-bash-completion-lib >> "$BASH_COMPLETION_DIR/mise"
-[ ! -f "$BASH_COMPLETION_DIR/fnox" ] && fnox completion bash >> "$BASH_COMPLETION_DIR/fnox"
 [ ! -f "$BASH_COMPLETION_DIR/ruff" ] && ruff generate-shell-completion bash >> "$BASH_COMPLETION_DIR/ruff"
 [ ! -f "$BASH_COMPLETION_DIR/uv" ] && uv generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uv"
 [ ! -f "$BASH_COMPLETION_DIR/uvx" ] && uvx --generate-shell-completion bash >> "$BASH_COMPLETION_DIR/uvx"
@@ -97,8 +96,6 @@ export BASH_COMPLETION_DIR="$XDG_DATA_HOME/bash-completion/completions"
 [ ! -f "$BASH_COMPLETION_DIR/sqlc" ] && sqlc completion bash > "$BASH_COMPLETION_DIR/sqlc"
 
 # Misc.
-
-eval "$(fnox activate bash)"
 
 export CARAPACE_BRIDGES="zsh,fish,bash,inshellisense"
 source <(carapace _carapace)
