@@ -20,6 +20,7 @@ carapace = "latest"
 bat-extras = "latest"
 "cargo:topgrade" = "latest"
 "go:go.senan.xyz/cliphist" = "latest"
+opencode = "latest"
 
 [settings]
 npm.bun = true
