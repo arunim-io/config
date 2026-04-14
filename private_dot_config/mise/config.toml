@@ -21,6 +21,7 @@ bat-extras = "latest"
 "cargo:topgrade" = "latest"
 "go:go.senan.xyz/cliphist" = "latest"
 opencode = "latest"
+glab = { version = "latest", exe = "glab" }
 
 [settings]
 npm.bun = true
