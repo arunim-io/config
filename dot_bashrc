@@ -1,7 +1,0 @@
-if [ -f /etc/bashrc ]; then source /etc/bashrc; fi
-
-export BASH_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/bash"
-export BASH_CONFIG_FILE="$BASH_CONFIG_DIR/config.bash"
-
-# shellcheck source=.config/bash/config.bash
-source "$BASH_CONFIG_FILE"

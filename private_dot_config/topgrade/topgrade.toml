@@ -1,7 +1,0 @@
-[misc]
-pre_sudo = true
-cleanup = true
-show_distribution_summary = true
-assume_yes = true
-no_self_update = true
-disable = ["typst"]

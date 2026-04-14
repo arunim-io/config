@@ -1,5 +1,0 @@
-output "eDP-1" {
-		focus-at-startup
-		hot-corners { top-left; }
-		scale 1.25
-}

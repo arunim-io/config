@@ -1,5 +1,0 @@
-layout {
-  gaps 10
-  center-focused-column "on-overflow"
-  focus-ring { width 5; }
-}

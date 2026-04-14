@@ -1,4 +1,0 @@
-if [ -f ~/.bashrc ]; then
-  # shellcheck source=./.bashrc
-  source ~/.bashrc
-fi
